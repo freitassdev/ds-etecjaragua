@@ -1,0 +1,41 @@
+.footer {
+    width: 100%;
+    height: 12rem;
+    background: var(--surface-c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: -10px;
+}
+
+.footer-items {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-item {
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.footer-infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.footer-copyright {
+    font-family: 'Nunito', sans-serif;
+}
+

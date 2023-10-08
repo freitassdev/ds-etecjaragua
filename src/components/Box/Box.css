@@ -1,0 +1,19 @@
+
+.box {
+    border-radius: 16px;
+    min-width: 80%;
+    width: 80%;
+    min-height: 10rem;
+    background-color: rgba(30, 40, 54, .5);
+    backdrop-filter: blur(8px);
+  }
+  
+  .box-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .box-title {
+    text-align: center;
+}
