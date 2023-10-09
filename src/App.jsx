@@ -5,6 +5,7 @@ import Box from './components/Box/Box';
 import { Steps } from 'primereact/steps';
 import './App.css';
 import shape1 from './assets/shape1.svg';
+import Card from './components/Card/Card';
 
 function App() {
   const [ativo, setAtivo] = useState(false);
@@ -26,13 +27,13 @@ function App() {
   ];
   return (
     <>
-      <div className={`entrada content scroll-container ${ativo ? "ativo" : ""}`}>
+      <div className={`entrada content content-blur scroll-container ${ativo ? "ativo" : ""}`}>
         <Navbar />
         <section id="home">
           <div className='background'>
             <div className='home-container'>
               <h1 className='home-title'>Se descubra no mundo da programação!</h1>
-              <p className='home-description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime nulla sapiente ducimus, ipsam culpa architecto. Consequuntur omnis itaque quos eveniet recusandae? Voluptatem veritatis quasi quis quae! Ea, laboriosam eaque.</p>
+              <p className='home-description'>Sua porta de entrada para o emocionante mundo do desenvolvimento de sistemas. Nosso objetivo não é apenas apresentar um pouco sobre o nosso curso, nós cultivamos mentes criativas, inspiramos inovação e capacitamos futuros desenvolvedores a transformarem suas paixões em soluções digitais. Explore o mundo da tecnologia com a nossa comunidade de programadores. Juntos, na Etec Jaraguá.</p>
             </div>
           </div>
         </section>
@@ -49,13 +50,10 @@ function App() {
           <div className="about-container">
             <div className='bbox'>
               <Box title="Sobre Nós">
-              <div>
-                {/*body da box*/}
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              </div>
-            </Box>
+              </Box>
+
             </div>
-            
+
           </div>
         </section>
 
@@ -69,15 +67,11 @@ function App() {
         </section>
         <section id="etec">
           <h1>events</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quibusdam vel animi ratione neque, fugit culpa voluptatum laboriosam pariatur veniam hic nemo modi eum placeat amet quasi ut minus eligendi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quam autem in, sequi eos quo perferendis illum nulla saepe mollitia. Consequatur quia illo maiores eligendi impedit sequi culpa, saepe voluptatem!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laboriosam quo corporis est, atque sequi mollitia minima iste at nisi aliquam, laudantium, cum dignissimos iure enim a recusandae officiis repellat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quibusdam vel animi ratione neque, fugit culpa voluptatum laboriosam pariatur veniam hic nemo modi eum placeat amet quasi ut minus eligendi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quam autem in, sequi eos quo perferendis illum nulla saepe mollitia. Consequatur quia illo maiores eligendi impedit sequi culpa, saepe voluptatem!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laboriosam quo corporis est, atque sequi mollitia minima iste at nisi aliquam, laudantium, cum dignissimos iure enim a recusandae officiis repellat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quibusdam vel animi ratione neque, fugit culpa voluptatum laboriosam pariatur veniam hic nemo modi eum placeat amet quasi ut minus eligendi.</p>
+         
         </section>
         <section id="vestibulinho">
           <h1>Vestibulinho Etec</h1>
-
+          
           <Steps className="p-highlight" model={items} />
         </section>
       </div >

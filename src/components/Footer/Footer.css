@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    height: 12rem;
+    height: 14rem;
     background: var(--surface-c);
     display: flex;
     align-items: center;
@@ -21,11 +21,17 @@
     font-weight: 600;
 }
 
+.footer-phones {
+    display: flex;
+    gap: 12px;
+}
+
 .footer-infos {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 8px;
 }
 
 .footer-info {
@@ -39,3 +45,7 @@
     font-family: 'Nunito', sans-serif;
 }
 
+.footer a {
+    color: initial;
+    text-decoration: none;
+}

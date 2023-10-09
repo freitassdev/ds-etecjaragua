@@ -131,3 +131,13 @@ li.p-disabled {
   left: 0;
   z-index: -1212;
 }
+
+.box-content {
+  display: flex;
+  align-items: center;
+}
+
+/*SECTION: EVENTOS*/
+
+
+/*FIM SECTION EVENTOS*/
