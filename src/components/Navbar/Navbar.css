@@ -109,33 +109,26 @@ ul {
     }
 
     .navbar-items-container-mobile {
-        height: 23rem;
+        height: 100vh;
         width: 100%;
-        padding: 0;
         position: absolute;
-        background-color: rgba(19, 28, 40, .5);
-        /* Coloca .elemento-neto acima de .navcontent e do fundo com backdrop-filter */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        background-color: #17212f;
         box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
-        margin-top: 27rem;
         justify-content: center;
         align-items: center;
         z-index: 100 !important;
     }
 
-    .navbar-items-container-mobile::after {
-        content: '';
-        width: 100%;
-        height: 23rem;
-        top: 10%;
-        position: absolute;
-        backdrop-filter: blur(100px);
-        background-color: #ffffff10;
-        z-index: 1;
-    }
-
     .navbar-items-mobile {
-        flex-direction: column;
+        height: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -145,6 +138,7 @@ ul {
         display: flex;
         background-color: transparent;
         border: 0px transparent;
+        z-index: 200;
     }
 
     .navbar-external-button {

@@ -40,7 +40,7 @@ function Navbar() {
                             <Link to="home" offset={-64} spy={true} smooth={true} duration={500}>INÍCIO</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to="about" offset={-64} spy={true} smooth={true} duration={500}>Sobre Nós</Link>
+                            <Link to="about" offset={50} spy={true} smooth={true} duration={500}>Sobre Nós</Link>
                         </li>
                         <li className='nav-item'>
                             <Link to="etec" offset={-64} spy={true} smooth={true} duration={500}>Etec Jaraguá</Link>

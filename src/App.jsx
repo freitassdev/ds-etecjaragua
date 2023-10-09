@@ -59,19 +59,16 @@ function App() {
 
         <section id="events">
           <h1>etec</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quibusdam vel animi ratione neque, fugit culpa voluptatum laboriosam pariatur veniam hic nemo modi eum placeat amet quasi ut minus eligendi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quam autem in, sequi eos quo perferendis illum nulla saepe mollitia. Consequatur quia illo maiores eligendi impedit sequi culpa, saepe voluptatem!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laboriosam quo corporis est, atque sequi mollitia minima iste at nisi aliquam, laudantium, cum dignissimos iure enim a recusandae officiis repellat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quibusdam vel animi ratione neque, fugit culpa voluptatum laboriosam pariatur veniam hic nemo modi eum placeat amet quasi ut minus eligendi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quam autem in, sequi eos quo perferendis illum nulla saepe mollitia. Consequatur quia illo maiores eligendi impedit sequi culpa, saepe voluptatem!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laboriosam quo corporis est, atque sequi mollitia minima iste at nisi aliquam, laudantium, cum dignissimos iure enim a recusandae officiis repellat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quibusdam vel animi ratione neque, fugit culpa voluptatum laboriosam pariatur veniam hic nemo modi eum placeat amet quasi ut minus eligendi.</p>
+          <p>A sigla ETEC significa Escola Técnica Estadual, e é um tipo de instituição de ensino pública localizada no estado de São Paulo, no Brasil. Com cursos técnicos e cursos técnicos integrado ao ensino médio, ou seja, você faz o ensino médio junto com o curso técnico. A ETEC é uma escola especializada em ensinar conhecimentos práticos e habilidades específicas em áreas como informática, administração, mecânica, eletrônica, entre outras. Os cursos geralmente duram alguns anos, e os estudantes aprendem tanto na sala de aula quanto na prática, em laboratórios e estágios.
+          </p>
         </section>
         <section id="etec">
           <h1>events</h1>
-         
+
         </section>
         <section id="vestibulinho">
           <h1>Vestibulinho Etec</h1>
-          
+
           <Steps className="p-highlight" model={items} />
         </section>
       </div >
