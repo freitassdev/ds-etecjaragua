@@ -141,7 +141,31 @@ ul {
         z-index: 200;
     }
 
+
     .navbar-external-button {
         display: none;
     }
+
+    .nav-item {
+        margin-top: 10px;
+    }
+
+    .social-icons-mobile {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .button-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -150px;
+        z-index: 999;
+    }
+
+    .nav-logo {
+        z-index: 1000;
+    }
+    
 }

@@ -6,6 +6,10 @@ import { Steps } from 'primereact/steps';
 import './App.css';
 import shape1 from './assets/shape1.svg';
 import Card from './components/Card/Card';
+import campus from './assets/campus_party.png';
+import hacktoon from './assets/hacktoon.png';
+import tecsesp from './assets/tecsesp.jpg';
+import obi from './assets/obi.jpg';
 
 function App() {
   const [ativo, setAtivo] = useState(false);
@@ -58,20 +62,76 @@ function App() {
         </section>
 
         <section id="events">
-          <h1>etec</h1>
-          <p>A sigla ETEC significa Escola Técnica Estadual, e é um tipo de instituição de ensino pública localizada no estado de São Paulo, no Brasil. Com cursos técnicos e cursos técnicos integrado ao ensino médio, ou seja, você faz o ensino médio junto com o curso técnico. A ETEC é uma escola especializada em ensinar conhecimentos práticos e habilidades específicas em áreas como informática, administração, mecânica, eletrônica, entre outras. Os cursos geralmente duram alguns anos, e os estudantes aprendem tanto na sala de aula quanto na prática, em laboratórios e estágios.
-          </p>
+          <div className='title-etec'>
+            <h1>Etec</h1>
+          </div>
+          <div className='txt-etec'>
+            <p>A sigla ETEC significa Escola Técnica Estadual, e é um tipo de instituição de ensino pública localizada no estado de São Paulo, no Brasil. Com cursos técnicos e cursos técnicos integrado ao ensino médio, ou seja, você faz o ensino médio junto com o curso técnico. A ETEC é uma escola especializada em ensinar conhecimentos práticos e habilidades específicas em áreas como informática, administração, mecânica, eletrônica, entre outras. Os cursos geralmente duram alguns anos, e os estudantes aprendem tanto na sala de aula quanto na prática, em laboratórios e estágios.
+            </p>
+          </div>
+          <div className='images-container'>
+            <div className='image-item '>
+              <div className='image'>
+                <img src="https://media.discordapp.net/attachments/1122234389867286640/1160315031838265475/3152072_orig.png" />
+              </div>
+              <div className='image-text'>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere reiciendis, deserunt quae nihil deleniti magni commodi quia eius quibusdam amet odit aliquid culpa vitae veritatis? Laboriosam delectus culpa obcaecati eveniet.
+                </p>
+              </div>
+            </div>
+            <div className='image-item reverse'>
+              <div className='image'>
+                <img src="https://media.discordapp.net/attachments/1122234389867286640/1160315031838265475/3152072_orig.png" />
+              </div>
+              <div className='image-text'>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere reiciendis, deserunt quae nihil deleniti magni commodi quia eius quibusdam amet odit aliquid culpa vitae veritatis? Laboriosam delectus culpa obcaecati eveniet.
+                </p>
+              </div>
+            </div>
+            <div className='image-item '>
+              <div className='image'>
+                <img src="https://media.discordapp.net/attachments/1122234389867286640/1160315031838265475/3152072_orig.png" />
+              </div>
+              <div className='image-text'>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere reiciendis, deserunt quae nihil deleniti magni commodi quia eius quibusdam amet odit aliquid culpa vitae veritatis? Laboriosam delectus culpa obcaecati eveniet.
+                </p>
+              </div>
+            </div>
+            <div className='image-item reverse'>
+              <div className='image'>
+                <img src="https://media.discordapp.net/attachments/1122234389867286640/1160315031838265475/3152072_orig.png" />
+              </div>
+              <div className='image-text'>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere reiciendis, deserunt quae nihil deleniti magni commodi quia eius quibusdam amet odit aliquid culpa vitae veritatis? Laboriosam delectus culpa obcaecati eveniet.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
         <section id="etec">
-          <h1>events</h1>
-
+          <div className='txt-events'>
+            <h1>eventos que participamos</h1>
+          </div>
+          <div className='img-events'>
+            <a href="https://brasil.campus-party.org"><img src={campus} alt="" /></a>
+            <a href="http://www.robotica.cpscetec.com.br"><img src={hacktoon}/></a>
+            <a href="https://www.cps.sp.gov.br/tag/tecsesp"><img src={tecsesp} /></a> 
+            <a href="https://olimpiada.ic.unicamp.br"><img src={obi}/></a> 
+          </div>
+          <p>
+            
+          </p>
         </section>
         <section id="vestibulinho">
           <h1>Vestibulinho Etec</h1>
 
           <Steps className="p-highlight" model={items} />
         </section>
-      </div >
+      </div>
       <Footer />
     </>
   );

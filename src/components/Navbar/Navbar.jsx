@@ -35,7 +35,7 @@ function Navbar() {
                     <img className='logo' src={logo} alt="DS LOGO" />
                 </div>
                 <div className={mobile && isMobile ? 'navbar-items-container-mobile shadow-4' : 'nav-items-container'} style={{ transitionDuration: "0.2s", transitionTimingFunction: "ease-in-out" }}>
-                    <Scrollspy items={['home', 'about', 'events', 'etec']} currentClassName="active" className={mobile && isMobile ? 'navbar-items-mobile' : 'nav-items'}>
+                    <Scrollspy items={['home', 'about', 'etec', 'events']} currentClassName="active" className={mobile && isMobile ? 'navbar-items-mobile' : 'nav-items'}>
                         <li className='nav-item'>
                             <Link to="home" offset={-64} spy={true} smooth={true} duration={500}>INÍCIO</Link>
                         </li>
@@ -48,8 +48,20 @@ function Navbar() {
                         <li className='nav-item'>
                             <Link to="events" offset={-64} spy={true} smooth={true} duration={500}>Eventos</Link>
                         </li>
-
                     </Scrollspy>
+                    {mobile && isMobile ?
+                        <div className="button-mobile">
+                            <ul className='social-icons-mobile'>
+                                <li className='social-icon'>
+                                    <a href='https://www.tiktok.com/@mds.etec' target='blank'><BiLogoTiktok size={25} color='64b5f6' /></a>
+                                </li>
+                                <li className='social-icon'>
+                                    <a href='https://www.instagram.com/ds.etecjaragua' target='blank'><BiLogoInstagram size={25} color='64b5f6' /></a>
+                                </li>
+                            </ul>
+                            <a href='https://www.etecjaragua.com' target='blank'><Button className="navbar-external-button-mobile" label="&nbsp; Etec Jaraguá" icon="pi pi-external-link" style={{ whiteSpace: "nowrap" }} /></a>
+                        </div>
+                        : null}
                 </div>
                 <div className="nav-button">
                     <ul className='social-icons'>
@@ -57,7 +69,7 @@ function Navbar() {
                             <a href='https://www.tiktok.com/@mds.etec' target='blank'><BiLogoTiktok size={25} color='64b5f6' /></a>
                         </li>
                         <li className='social-icon'>
-                            <a href='https://instagram.com/mds.etec?' target='blank'><BiLogoInstagram size={25} color='64b5f6' /></a>
+                            <a href='https://www.instagram.com/ds.etecjaragua' target='blank'><BiLogoInstagram size={25} color='64b5f6' /></a>
                         </li>
                     </ul>
 
