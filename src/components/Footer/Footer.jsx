@@ -17,7 +17,7 @@ function Footer() {
                             <a href='https://www.tiktok.com/@mds.etec' target='blank'><BiLogoTiktok size={32} color='fff' /></a>
                         </li>
                         <li className='social-icon'>
-                            <a href='https://instagram.com/mds.etec' target='blank'><BiLogoInstagram size={32} color='fff' /></a>
+                            <a href='https://www.instagram.com/ds.etecjaragua/' target='blank'><BiLogoInstagram size={32} color='fff' /></a>
                         </li>
                     </ul>
                 </div>

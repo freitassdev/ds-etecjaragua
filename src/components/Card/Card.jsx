@@ -1,5 +1,6 @@
 import './Card.css';
 import VanillaTilt from 'vanilla-tilt';
+
 function Card({ title, number, description }) {
     VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,

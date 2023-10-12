@@ -19,11 +19,3 @@
   height: auto;
   text-align: center;
 }
-
-.cards-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-basis: auto;
-  justify-content: space-between;
-}

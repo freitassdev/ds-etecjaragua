@@ -23,3 +23,13 @@ body {
   padding: 0;
   min-height: 100vh;
 }
+
+.p-galleria.p-galleria-indicators-bottom .p-galleria-indicator,
+.p-galleria.p-galleria-indicators-top .p-galleria-indicator {
+  margin-right: 0.5rem !important;
+}
+
+.p-galleria-item img {
+  padding: 5px;
+  border-radius: 21px;
+}
