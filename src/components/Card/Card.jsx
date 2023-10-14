@@ -1,7 +1,8 @@
 import './Card.css';
 import VanillaTilt from 'vanilla-tilt';
 
-function Card({ title, number, description }) {
+
+function VantagesCard({ title, number, description }) {
     VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,
         speed: 400,
@@ -20,4 +21,4 @@ function Card({ title, number, description }) {
     )
 }
 
-export default Card
+export default VantagesCard

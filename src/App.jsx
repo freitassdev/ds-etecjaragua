@@ -9,8 +9,8 @@ import Footer from './components/Footer/Footer';
 import Box from './components/Box/Box';
 import { Steps } from 'primereact/steps';
 import './App.css';
-import shape1 from './assets/shape1.svg';
-import Card from './components/Card/Card';
+import { Accordion, AccordionTab } from 'primereact/accordion';
+import VantagesCard from './components/Card/Card';
 import campus from './assets/campus_party.png';
 import hacktoon from './assets/hacktoon.png';
 import tecsesp from './assets/tecsesp.jpg';
@@ -18,6 +18,7 @@ import obi from './assets/obi.jpg';
 import cartaz from './assets/cartaz.png';
 import { Galleria } from 'primereact/galleria';
 import Fade from 'react-reveal/Fade';
+import { Card } from 'primereact/card';
 
 function App() {
   const [images, setImages] = useState(null);
@@ -132,8 +133,18 @@ function App() {
   ];
 
   const itemTemplate = (item) => {
-    return <img src={item.itemImageSrc} alt={item.alt} style={{ width: '100%', display: 'block' }} />;
+    return <img src={item.itemImageSrc} alt={item.alt} style={{ width: '100%', display: 'block', }} />;
   };
+
+  const header1 = () => {
+    return <img className='img-projeto' src="https://media.discordapp.net/attachments/1122234389867286640/1162852497971495072/image.png"/>
+  }
+  const header2 = () => {
+    return <img className='img-projeto' src="https://media.discordapp.net/attachments/1122234389867286640/1162876573964325016/image.png"/>
+  }
+  const header3 = () => {
+    return <img className='img-projeto' src="https://media.discordapp.net/attachments/1122234389867286640/1162849713826037884/image.png" />
+  }
   return (
     <>
       <div className={`entrada content content-blur scroll-container ${ativo ? "ativo" : ""}`}>
@@ -157,28 +168,133 @@ function App() {
           </svg>
         </section >
         <section id="curse">
-          <div className="curse-container">
+          <div className="curse-container curse-box">
             <div className="curse-title">
               <h1 className="title-bold">
                 Desenvolvimento de Sistemas
               </h1>
             </div>
+            <Accordion activeIndex={0}>
+              <AccordionTab header="Design Digital">
+                <p className="m-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </AccordionTab>
+              <AccordionTab header="Programação Web">
+                <p className="m-0">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                  sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                  Consectetur, adipisci velit, sed quia non numquam eius modi.
+                </p>
+              </AccordionTab>
+              <AccordionTab header="Banco de Dadoos">
+                <p className="m-0">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                </p>
+              </AccordionTab>
+              <AccordionTab header="Aplicativos Mobile">
+                <p className="m-0">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                </p>
+              </AccordionTab>
+              <AccordionTab header="Análise e Projeto de Sistemas">
+                <p className="m-0">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                </p>
+              </AccordionTab>
+              <AccordionTab header="Programação de Aplicativos Mobile">
+                <p className="m-0">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                </p>
+              </AccordionTab>
+              <AccordionTab header="Sistemas Embarcados">
+                <p className="m-0">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                </p>
+              </AccordionTab>
+              <AccordionTab header="Protocólos e Segurança">
+                <p className="m-0">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                </p>
+              </AccordionTab>
+              <AccordionTab header="Fundamentos da Informática">
+                <p className="m-0">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                </p>
+              </AccordionTab>
+              <AccordionTab header="Desenvolvimento de Sistemas">
+                <p className="m-0">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                </p>
+              </AccordionTab>
+              <AccordionTab header="Fundamentos da Informática">
+                <p className="m-0">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                </p>
+              </AccordionTab>
+            </Accordion>
             <Fade up>
               <div className="cards-container">
-                <Card number="one" title="Alta Demanda" description="Profissionais são altamente procurados em várias indústrias, garantindo estabilidade e oportunidades de emprego."></Card>
-                <Card number="two" title="Diversidade" description="Possui diversas àreas, como web, aplicativos móveis, segurança cibernética e inteligência artificial, oferecendo escolhas alinhadas aos interesses."></Card>
-                <Card number="three" title="Salário Alto" description="Desenvolvimento de Sistemas é uma das àreas com os melhores pagamentos e benefícios, valorizando habilidades e experiência."></Card>
-                <Card number="four" title="Flexibilidade" description="Muitas posições permitem home office, proporcionando um equilíbrio saudável entre vida profissional e pessoal."></Card>
+                <VantagesCard number="one" title="Alta Demanda" description="Profissionais são altamente procurados em várias indústrias, garantindo estabilidade e oportunidades de emprego."></VantagesCard>
+                <VantagesCard number="two" title="Diversidade" description="Possui diversas àreas, como web, aplicativos móveis, segurança cibernética e inteligência artificial, oferecendo escolhas alinhadas aos interesses."></VantagesCard>
+                <VantagesCard number="three" title="Salário Alto" description="Desenvolvimento de Sistemas é uma das àreas com os melhores pagamentos e benefícios, valorizando habilidades e experiência."></VantagesCard>
+                <VantagesCard number="four" title="Flexibilidade" description="Muitas posições permitem home office, proporcionando um equilíbrio saudável entre vida profissional e pessoal."></VantagesCard>
               </div>
             </Fade>
-          </div>
-        </section>
-        <section id="about">
-          <div className="about-container">
-            <div className='bbox'>
-              <Box title="Sobre nós">
+            <div className='title-projetos'>Confira nossos projetos</div>
 
-              </Box>
+            <div className='projects-cards'>
+              <Card title="Discord Bot" subTitle="Michel de Freitas" header={header1} className="md:w-25rem">
+                <p className="m-0" >
+                  
+                </p>
+              </Card>
+              <Card title="Calculadora de Tempo" subTitle="Daniel da Silva" header={header2} className="md:w-25rem">
+                <p className="m-0" >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+                  numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+                </p>
+              </Card>
+              <Card title="Portfolio" subTitle="Natan Santos" header={header3} className="md:w-25rem">
+                <p className='link-projeto' >
+                No meu primeiro projeto, mergulhei no universo do desenvolvimento web, criando um site incrível do zero usando HTML e CSS. Explorei diversos caminhos, dando vida para minhas ideias com o objetivo de tornar o projeto mais atraente.
+                </p>
+                <br />
+                <p className='link-projeto-natan'>
+                <a href="https://primeiro-projeto-alura-natan.vercel.app"> Conferir projeto</a>
+                </p>
+              </Card>
             </div>
 
           </div>
@@ -205,22 +321,30 @@ function App() {
           </Fade>
 
         </section>
+        <section id="about">
+          <div className="about-container">
+            <div className='bbox'>
+              <Box title="Sobre nós">
+              </Box>
+            </div>
+          </div>
+        </section>
         <section id="events">
           <div className='txt-events'>
-            <h1>EVENTOS QUE PARTICIPAMOS</h1>
+            <h1 className='title-bold'>EVENTOS QUE PARTICIPAMOS</h1>
           </div>
           <div className=''>
             <div className='img-events'>
-              <a href="https://brasil.campus-party.org"><img src={campus} alt="" /></a>
-              <a href="http://www.robotica.cpscetec.com.br"><img src={hacktoon} /></a>
-              <a href="https://www.cps.sp.gov.br/tag/tecsesp"><img src={tecsesp} /></a>
-              <a href="https://olimpiada.ic.unicamp.br"><img src={obi} /></a>
+              <a href="https://brasil.campus-party.org" target='blank'><img src={campus} alt="" /></a>
+              <a href="http://www.robotica.cpscetec.com.br" target='blank'><img src={hacktoon} /></a>
+              <a href="https://www.cps.sp.gov.br/tag/tecsesp" target='blank'><img src={tecsesp} /></a>
+              <a href="https://olimpiada.ic.unicamp.br" target='blank'><img src={obi} /></a>
             </div>
           </div>
         </section>
         <section id="vestibulinho">
           <div className='txt-vestibulinho'>
-            <h1>VESTIBULINHO ETEC</h1>
+            <h1 className='title-bold'>VESTIBULINHO ETEC</h1>
           </div>
           <div className='container-vestibulinho'>
             <a target='blank' href="https://www.vestibulinhoetec.com.br/home/"><img className='img-vestibulinho' src={cartaz} /></a>

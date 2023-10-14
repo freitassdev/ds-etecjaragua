@@ -4,6 +4,10 @@ body {
   overflow-x: hidden;
 }
 
+.img-projeto {
+  height: 170px;
+}
+
 /* Firefox */
 * {
   scrollbar-width: thin;
@@ -15,6 +19,7 @@ body {
   height: 10px;
   width: 10px;
 }
+
 *::-webkit-scrollbar-track {
   border-radius: 5px;
   background-color: #1D2A3C;
@@ -145,6 +150,38 @@ body {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
+  background: linear-gradient(16deg, rgb(97, 186, 250) 0%, rgba(69, 176, 255, 1) 36%, rgba(0, 118, 203, 1) 67%, rgb(29, 161, 255));
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.title-projetos {
+  font-family: 'Futura XBlk BT', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(16deg, rgb(97, 186, 250) 0%, rgba(69, 176, 255, 1) 36%, rgba(0, 118, 203, 1) 67%, rgb(29, 161, 255));
+  ;
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-top: 2%;
+}
+
+.cards-prints {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  border-radius: 12px;
+}
+
+.link-projeto-natan {
+  text-align: center;
+  text-decoration: none;
 }
 
 #about {
@@ -209,6 +246,7 @@ li.p-disabled {
 #etec {
   background-image: url(assets/stars.svg);
 }
+
 .txt-etec {
   font-size: 1.3rem;
   padding-left: 3%;
@@ -224,6 +262,11 @@ li.p-disabled {
   padding-top: 2%;
   text-transform: uppercase;
   letter-spacing: 2px;
+  background: rgb(0, 147, 255);
+  background-image: linear-gradient(16deg, #1a237e 0%, #64b5f6 50%, #0027d4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .galleria-container {
@@ -234,9 +277,6 @@ li.p-disabled {
 }
 
 /*FIM SECTION: ETEC*/
-
-
-
 
 
 
@@ -271,7 +311,7 @@ li.p-disabled {
   flex-basis: auto;
   transition: all 0.3s;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-} 
+}
 
 .img-events img:hover {
   transform: scale(1.05);
@@ -279,9 +319,27 @@ li.p-disabled {
   filter: invert(100);
 }
 
-/*FIM SECTION EVENTOS*/
+.projects-cards {
+  display: flex;
+  /* flex-basis: 200; */
+  flex-wrap: wrap;
+}
 
-.txt-vestibulinho{
+/*FIM SECTION EVENTOS*/
+/* #vestibulinho {
+  background-color: #fff;
+} */
+
+.steps-vestibulinho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+
+.txt-vestibulinho {
   font-family: 'Futura XBlk BT', sans-serif;
   font-size: 25px;
   text-align: center;
@@ -296,6 +354,11 @@ li.p-disabled {
   align-items: center;
 }
 
+.p-steps {
+  width: 80%;
+  justify-content: center;
+}
+
 .img-vestibulinho {
   border-radius: 16px;
   width: 500px;
@@ -303,12 +366,13 @@ li.p-disabled {
   padding-bottom: 1%;
 }
 
-.container-vestibulinho img:hover{
+.container-vestibulinho img:hover {
   transform: scale(1.02);
 }
 
 .steps-vestibulinho {
   text-align: center;
+
 }
 
 #curse {
@@ -346,4 +410,18 @@ li.p-disabled {
     font-size: 1rem;
     text-align: center;
   }
+}
+
+
+.curse-box {
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  width: 95%;
+  border-top: 1px solid #293b55;
+  border-left: 1px solid #293b55;
+  backdrop-filter: blur(8px);
+  background: rgba(23, 33, 47, 0.1);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
 }
