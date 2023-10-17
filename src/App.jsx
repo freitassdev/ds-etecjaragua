@@ -42,8 +42,8 @@ function App() {
         title: 'Title 3'
       },
       {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria4.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria4s.jpg',
+        itemImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163637318146596874/WhatsApp_Image_2023-10-16_at_21.36.16.jpeg',
+        thumbnailImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163637318146596874/WhatsApp_Image_2023-10-16_at_21.36.16.jpeg',
         alt: 'Description for Image 4',
         title: 'Title 4'
       },
@@ -86,8 +86,8 @@ function App() {
       <>
 
           <div >
-            <a href={link}><Button label="Visitar" icon="pi pi-external-link" /></a>
-            <a href={github}><Button label="GitHub" severity="secondary" icon="pi pi-github" style={{ marginLeft: '0.5em' }} /></a>
+            <a href={link}><Button label="Visitar" className='project-button' icon="pi pi-external-link" /></a>
+            <a href={github}><Button label="GitHub" className='project-button' severity="secondary" icon="pi pi-github" style={{ marginLeft: '0.5em' }} /></a>
           </div>
         
       </>

@@ -95,7 +95,7 @@ ul {
     padding-inline-start: 0;
 }
 
-@media screen and (max-width: 1100) {
+@media screen and (max-width: 1100px) {
 
     ul {
         padding-inline-start: 0;

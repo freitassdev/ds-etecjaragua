@@ -66,25 +66,13 @@ body {
 .background {
   min-height: 100vh;
   position: relative;
-  background-image: url(assets/background.avif);
+  background-image: url(assets/background.png);
   /* Outros estilos do elemento */
   background-size: cover;
   z-index: -10;
 
   /* Para aplicar o filtro de desfoque na própria imagem de fundo */
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: inherit;
-    filter: blur(12px);
-    /* Altere o valor do desfoque conforme necessário */
-    z-index: -1;
-    background-repeat: no-repeat;
-  }
+  
 }
 
 
@@ -212,6 +200,16 @@ body {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
+
+/* .project-button {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} 
+
+.project-button:hover {
+  box-shadow: rgb(0, 225, 255) 0px 3px 8px;
+  transform: scale(1.1);
+} */
 
 #about {
   width: 100%;
