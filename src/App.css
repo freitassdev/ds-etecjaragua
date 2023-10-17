@@ -157,6 +157,18 @@ body {
   background-clip: text;
 }
 
+.title-bold::before {
+    background: url(assets/point.svg);
+    width: 120px;
+    margin-left: -20px;
+    height: 50px;
+    z-index: -1;
+    position: absolute;
+    content: "";
+    opacity: .22;
+    pointer-events: none;
+}
+
 .title-projetos {
   font-family: 'Futura XBlk BT', sans-serif;
   font-size: 35px;
@@ -164,24 +176,41 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   background: linear-gradient(16deg, rgb(97, 186, 250) 0%, rgba(69, 176, 255, 1) 36%, rgba(0, 118, 203, 1) 67%, rgb(29, 161, 255));
-  ;
   background-color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  padding-top: 2%;
+  margin-top: 15px;
 }
 
-.cards-prints {
+.title-projetos::before {
+  background: url(assets/point.svg);
+  width: 120px;
+  margin-left: -20px;
+  height: 50px;
+  z-index: -1;
+  position: absolute;
+  content: "";
+  opacity: .22;
+  pointer-events: none;
+}
+
+.projects-cards {
   display: flex;
-  gap: 20px;
-  width: 80%;
-  border-radius: 12px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.link-projeto-natan {
-  text-align: center;
-  text-decoration: none;
+.projects-cards .p-card {
+  border-radius: 12px;
+  margin: 10px;
+}
+
+.p-card .p-card-header img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 #about {
@@ -319,11 +348,6 @@ li.p-disabled {
   filter: invert(100);
 }
 
-.projects-cards {
-  display: flex;
-  /* flex-basis: 200; */
-  flex-wrap: wrap;
-}
 
 /*FIM SECTION EVENTOS*/
 /* #vestibulinho {
@@ -347,10 +371,14 @@ li.p-disabled {
   padding-top: 2%;
 }
 
-.container-vestibulinho {
+.vestibulinho-image > a {
+  width: 400px;
+  height: 400px;
+}
+
+.vestibulinho-container /* tava .container-vestibulinho */{ 
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -364,15 +392,59 @@ li.p-disabled {
   width: 500px;
   transition: all 0.3s;
   padding-bottom: 1%;
+  margin-right: 600px;
 }
 
-.container-vestibulinho img:hover {
+.vestibulinho-container img:hover /* tava .container-vestibulinho */{
   transform: scale(1.02);
+
+}
+
+
+.title-regras {
+  position: relative;
+  top: -500px;
+  margin-left: 650px;
+  font-family: 'Futura XBlk BT', sans-serif;
+  font-size: 16px;
+  margin-bottom: 2%;
+  background: rgb(0, 147, 255);
+  background-image: linear-gradient(16deg, #1a237e 0%, #64b5f6 50%, #0027d4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-regras::before {
+  background: url(assets/point.svg);
+  width: 600px;
+  margin-left: -20px;
+  height: 600px;
+  z-index: -1;
+  position: absolute;
+  content: "";
+  opacity: .22;
+  pointer-events: none;
+}
+
+.rule-item {
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .steps-vestibulinho {
   text-align: center;
+}
 
+.vestibulinho-rules {
+   margin-left: 30px;
+   
+}
+
+.vestibulinho-rules li{
+  font-size: 14px;
 }
 
 #curse {
@@ -396,7 +468,7 @@ li.p-disabled {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .home-title {
     font-weight: bold;
     font-size: 2.3rem;
@@ -412,6 +484,13 @@ li.p-disabled {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .projects-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
 .curse-box {
   margin: 0 auto;
@@ -424,4 +503,30 @@ li.p-disabled {
   background: rgba(23, 33, 47, 0.1);
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 16px;
+}
+
+.accordions-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.vestibulinho-container {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.vestibulinho-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.vestibulinho-image img {
+  width: 400px;
+  height: 400px;
 }

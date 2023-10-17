@@ -35,18 +35,21 @@ function Navbar() {
                     <img className='logo' src={logo} alt="DS LOGO" />
                 </div>
                 <div className={mobile && isMobile ? 'navbar-items-container-mobile shadow-4' : 'nav-items-container'} style={{ transitionDuration: "0.2s", transitionTimingFunction: "ease-in-out" }}>
-                    <Scrollspy items={['home', 'about', 'etec', 'events']} currentClassName="active" className={mobile && isMobile ? 'navbar-items-mobile' : 'nav-items'}>
+                    <Scrollspy items={['home', 'curse', 'etec', 'about', 'vestibulinho']} currentClassName="active" className={mobile && isMobile ? 'navbar-items-mobile' : 'nav-items'}>
                         <li className='nav-item'>
                             <Link to="home" offset={-64} spy={true} smooth={true} duration={500}>INÍCIO</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to="about" offset={50} spy={true} smooth={true} duration={500}>Sobre Nós</Link>
+                            <Link to="curse" offset={-64} spy={true} smooth={true} duration={500}>Nosso Curso</Link>
                         </li>
                         <li className='nav-item'>
                             <Link to="etec" offset={-64} spy={true} smooth={true} duration={500}>Etec Jaraguá</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to="events" offset={-64} spy={true} smooth={true} duration={500}>Eventos</Link>
+                            <Link to="about" offset={50} spy={true} smooth={true} duration={500}>Sobre Nós</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to="events" offset={-64} spy={true} smooth={true} duration={500}>Vestibulinho</Link>
                         </li>
                     </Scrollspy>
                     {mobile && isMobile ?

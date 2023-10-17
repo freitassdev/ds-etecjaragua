@@ -32,7 +32,7 @@ function Footer() {
                         <Link to="etec" offset={-64} spy={true} smooth={true} duration={500}>Etec Jaraguá</Link>
                     </li>
                     <li className='footer-item'>
-                        <Link to="events" offset={-64} spy={true} smooth={true} duration={500}>Eventos</Link>
+                        <Link to="events" offset={-64} spy={true} smooth={true} duration={500}>Vestibulinho</Link>
                     </li>
                 </Scrollspy>
                 <div className='footer-infos'>

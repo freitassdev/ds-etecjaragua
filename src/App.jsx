@@ -9,16 +9,12 @@ import Footer from './components/Footer/Footer';
 import Box from './components/Box/Box';
 import { Steps } from 'primereact/steps';
 import './App.css';
-import { Accordion, AccordionTab } from 'primereact/accordion';
-import VantagesCard from './components/Card/Card';
-import campus from './assets/campus_party.png';
-import hacktoon from './assets/hacktoon.png';
-import tecsesp from './assets/tecsesp.jpg';
-import obi from './assets/obi.jpg';
+import AccordionsCurse from './components/Accordion/Accordion';
 import cartaz from './assets/cartaz.png';
 import { Galleria } from 'primereact/galleria';
 import Fade from 'react-reveal/Fade';
 import { Card } from 'primereact/card';
+import { Button } from 'primereact/button';
 
 function App() {
   const [images, setImages] = useState(null);
@@ -34,14 +30,14 @@ function App() {
         title: 'Title 1'
       },
       {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria2.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria2s.jpg',
+        itemImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163600213458559097/WhatsApp_Image_2023-10-16_at_19.10.11.jpeg?',
+        thumbnailImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163600213458559097/WhatsApp_Image_2023-10-16_at_19.10.11.jpeg?e',
         alt: 'Description for Image 2',
         title: 'Title 2'
       },
       {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria3.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria3s.jpg',
+        itemImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163600213844443217/WhatsApp_Image_2023-10-16_at_19.10.09.jpeg',
+        thumbnailImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163600213844443217/WhatsApp_Image_2023-10-16_at_19.10.09.jpeg',
         alt: 'Description for Image 3',
         title: 'Title 3'
       },
@@ -57,66 +53,6 @@ function App() {
         alt: 'Description for Image 5',
         title: 'Title 5'
       },
-      {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria6.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria6s.jpg',
-        alt: 'Description for Image 6',
-        title: 'Title 6'
-      },
-      {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria7.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria7s.jpg',
-        alt: 'Description for Image 7',
-        title: 'Title 7'
-      },
-      {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria8.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria8s.jpg',
-        alt: 'Description for Image 8',
-        title: 'Title 8'
-      },
-      {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria9.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria9s.jpg',
-        alt: 'Description for Image 9',
-        title: 'Title 9'
-      },
-      {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria10.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria10s.jpg',
-        alt: 'Description for Image 10',
-        title: 'Title 10'
-      },
-      {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria11.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria11s.jpg',
-        alt: 'Description for Image 11',
-        title: 'Title 11'
-      },
-      {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria12.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria12s.jpg',
-        alt: 'Description for Image 12',
-        title: 'Title 12'
-      },
-      {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria13.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria13s.jpg',
-        alt: 'Description for Image 13',
-        title: 'Title 13'
-      },
-      {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria14.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria14s.jpg',
-        alt: 'Description for Image 14',
-        title: 'Title 14'
-      },
-      {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria15.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria15s.jpg',
-        alt: 'Description for Image 15',
-        title: 'Title 15'
-      }
     ])
   }, []);
 
@@ -137,18 +73,33 @@ function App() {
   };
 
   const header1 = () => {
-    return <img className='img-projeto' src="https://media.discordapp.net/attachments/1122234389867286640/1162852497971495072/image.png"/>
+    return <img className='img-projeto' src="https://media.discordapp.net/attachments/1122234389867286640/1162852497971495072/image.png" />
   }
   const header2 = () => {
-    return <img className='img-projeto' src="https://media.discordapp.net/attachments/1122234389867286640/1162876573964325016/image.png"/>
+    return <img className='img-projeto' src="https://media.discordapp.net/attachments/1122234389867286640/1162876573964325016/image.png" />
   }
   const header3 = () => {
     return <img className='img-projeto' src="https://media.discordapp.net/attachments/1122234389867286640/1162849713826037884/image.png" />
   }
+  const footer = (link, github) => {
+    return (
+      <>
+
+          <div >
+            <a href={link}><Button label="Visitar" icon="pi pi-external-link" /></a>
+            <a href={github}><Button label="GitHub" severity="secondary" icon="pi pi-github" style={{ marginLeft: '0.5em' }} /></a>
+          </div>
+        
+      </>
+    )
+
+  }
+
   return (
     <>
       <div className={`entrada content content-blur scroll-container ${ativo ? "ativo" : ""}`}>
         <Navbar />
+        {/* SECTION HOME: Michel */}
         <section id="home">
           <div className='background'>
             <Fade up>
@@ -167,6 +118,7 @@ function App() {
             <path fill="#64b5f6" d="M0,32L120,26.7C240,21,480,11,720,10.7C960,11,1200,21,1320,26.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
           </svg>
         </section >
+        {/* SECTION CURSE: Michel */}
         <section id="curse">
           <div className="curse-container curse-box">
             <div className="curse-title">
@@ -174,132 +126,37 @@ function App() {
                 Desenvolvimento de Sistemas
               </h1>
             </div>
-            <Accordion activeIndex={0}>
-              <AccordionTab header="Design Digital">
-                <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </AccordionTab>
-              <AccordionTab header="Programação Web">
-                <p className="m-0">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                  quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                  sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                  Consectetur, adipisci velit, sed quia non numquam eius modi.
-                </p>
-              </AccordionTab>
-              <AccordionTab header="Banco de Dadoos">
-                <p className="m-0">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-                </p>
-              </AccordionTab>
-              <AccordionTab header="Aplicativos Mobile">
-                <p className="m-0">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-                </p>
-              </AccordionTab>
-              <AccordionTab header="Análise e Projeto de Sistemas">
-                <p className="m-0">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-                </p>
-              </AccordionTab>
-              <AccordionTab header="Programação de Aplicativos Mobile">
-                <p className="m-0">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-                </p>
-              </AccordionTab>
-              <AccordionTab header="Sistemas Embarcados">
-                <p className="m-0">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-                </p>
-              </AccordionTab>
-              <AccordionTab header="Protocólos e Segurança">
-                <p className="m-0">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-                </p>
-              </AccordionTab>
-              <AccordionTab header="Fundamentos da Informática">
-                <p className="m-0">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-                </p>
-              </AccordionTab>
-              <AccordionTab header="Desenvolvimento de Sistemas">
-                <p className="m-0">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-                </p>
-              </AccordionTab>
-              <AccordionTab header="Fundamentos da Informática">
-                <p className="m-0">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                  mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-                </p>
-              </AccordionTab>
-            </Accordion>
-            <Fade up>
-              <div className="cards-container">
-                <VantagesCard number="one" title="Alta Demanda" description="Profissionais são altamente procurados em várias indústrias, garantindo estabilidade e oportunidades de emprego."></VantagesCard>
-                <VantagesCard number="two" title="Diversidade" description="Possui diversas àreas, como web, aplicativos móveis, segurança cibernética e inteligência artificial, oferecendo escolhas alinhadas aos interesses."></VantagesCard>
-                <VantagesCard number="three" title="Salário Alto" description="Desenvolvimento de Sistemas é uma das àreas com os melhores pagamentos e benefícios, valorizando habilidades e experiência."></VantagesCard>
-                <VantagesCard number="four" title="Flexibilidade" description="Muitas posições permitem home office, proporcionando um equilíbrio saudável entre vida profissional e pessoal."></VantagesCard>
-              </div>
-            </Fade>
+            <div className="accordions-container">
+              <AccordionsCurse />
+            </div>
+
+
             <div className='title-projetos'>Confira nossos projetos</div>
 
             <div className='projects-cards'>
-              <Card title="Discord Bot" subTitle="Michel de Freitas" header={header1} className="md:w-25rem">
+              <Card title="Discord Bot" subTitle="Michel de Freitas" header={header1} footer={footer("https://gabrielly.website", "https://github.com/freitassdev")} className="md:w-20rem">
                 <p className="m-0" >
-                  
+                Gabrielly foi um dos meus primeiros projetos, no caso um bot para o discord equipado com um dashboard. Foi fazendo esse projeto, que descobri meu amor pela programação.
+                <br /><br /><br />
                 </p>
               </Card>
-              <Card title="Calculadora de Tempo" subTitle="Daniel da Silva" header={header2} className="md:w-25rem">
+              <Card title="Age Calculator" subTitle="Daniel Bueno" footer={footer("https://danielsrbueno.github.io/age-calculator/", "https://github.com/danielsrbueno")} header={header2} className="md:w-20rem">
                 <p className="m-0" >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-                  numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
-                </p>
-              </Card>
-              <Card title="Portfolio" subTitle="Natan Santos" header={header3} className="md:w-25rem">
-                <p className='link-projeto' >
-                No meu primeiro projeto, mergulhei no universo do desenvolvimento web, criando um site incrível do zero usando HTML e CSS. Explorei diversos caminhos, dando vida para minhas ideias com o objetivo de tornar o projeto mais atraente.
+                  O Age Calculator calcula sua idade precisamente, em anos, meses e dias. Realizei o desafio com os conhecimentos que aprendi em Programação Web e Técnicas de Programação e Algoritmos.
                 </p>
                 <br />
-                <p className='link-projeto-natan'>
-                <a href="https://primeiro-projeto-alura-natan.vercel.app"> Conferir projeto</a>
+              </Card>
+              <Card title="Portfolio" subTitle="Natan Santos" header={header3} footer={footer("https://primeiro-projeto-alura-natan.vercel.app", "https://github.com/NatanRib12")} className="md:w-20rem">
+                <p className="m-0" >
+                  No meu primeiro projeto, mergulhei no universo do desenvolvimento web, criando um site incrível do zero usando HTML e CSS. Explorei diversos caminhos, dando vida para minhas ideias com o objetivo de tornar o projeto mais atraente.
                 </p>
+                
               </Card>
             </div>
 
           </div>
         </section>
-
+        {/* SECTION ETEC: Natan */}
         <section id="etec">
           <Fade left>
             <div className='title-etec'>
@@ -321,6 +178,7 @@ function App() {
           </Fade>
 
         </section>
+        {/* SECTION ABOUT: Daniel */}
         <section id="about">
           <div className="about-container">
             <div className='bbox'>
@@ -329,25 +187,24 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="events">
-          <div className='txt-events'>
-            <h1 className='title-bold'>EVENTOS QUE PARTICIPAMOS</h1>
-          </div>
-          <div className=''>
-            <div className='img-events'>
-              <a href="https://brasil.campus-party.org" target='blank'><img src={campus} alt="" /></a>
-              <a href="http://www.robotica.cpscetec.com.br" target='blank'><img src={hacktoon} /></a>
-              <a href="https://www.cps.sp.gov.br/tag/tecsesp" target='blank'><img src={tecsesp} /></a>
-              <a href="https://olimpiada.ic.unicamp.br" target='blank'><img src={obi} /></a>
-            </div>
-          </div>
-        </section>
+        {/* SECTION HOME: Daniel */}
         <section id="vestibulinho">
           <div className='txt-vestibulinho'>
             <h1 className='title-bold'>VESTIBULINHO ETEC</h1>
           </div>
-          <div className='container-vestibulinho'>
-            <a target='blank' href="https://www.vestibulinhoetec.com.br/home/"><img className='img-vestibulinho' src={cartaz} /></a>
+          <div className="vestibulinho-container">
+            <div className="vestibulinho-image">
+              <a target='blank' href="https://www.vestibulinhoetec.com.br/home/"><img className='img-vestibulinho' src={cartaz} /></a>
+            </div>
+            <div className="vestibulinho-rules">
+              <ul className="rules-list">
+                <li className='rule-item'><i className='pi pi-id-card'></i> Necessário RG para realizar a prova</li>
+                <li className='rule-item'><i className="pi pi-arrow-right-arrow-left"></i> No momento da prova, não é permitido pedir algum emprestado a outro concorrente</li>
+                <li className='rule-item'><i className="pi pi-volume-up"></i> Caso o celular do participante emita algum som durante a prova, será desclassificado</li>
+                <li className='rule-item'><i className="pi pi-calculator"></i> Não é permitido o uso de calculadora</li>
+                <li className='rule-item'><i className="pi pi-clock"></i> Caso o concorrente chegue atrasado, será desclassificado</li>
+              </ul>
+            </div>
           </div>
           <div className="steps-vestibulinho">
             <h1>Etapas</h1>
@@ -355,6 +212,7 @@ function App() {
           </div>
         </section>
       </div>
+      {/* FOOTER: Daniel */}
       <Footer />
     </>
   );
