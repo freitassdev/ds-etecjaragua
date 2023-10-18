@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import './Box.css';
-import Card from '../Card/Card';
 import Fade from 'react-reveal/Fade';
 
-function Box({ children, title }) {
+function Box({ title }) {
     return (
         <div className="box shadow-5">
             <div className="box-container">
@@ -32,7 +31,6 @@ function Box({ children, title }) {
                         <img alt="" />
                     </Fade>
                     <br />
-                    {children}
                 </div>
             </div>
         </div >

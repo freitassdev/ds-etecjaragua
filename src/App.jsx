@@ -15,7 +15,10 @@ import { Galleria } from 'primereact/galleria';
 import Fade from 'react-reveal/Fade';
 import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
-
+import michel from "./assets/michel.png";
+import natan from "./assets/natan.png";
+import daniel from "./assets/daniel.png";
+import etec1 from "./assets/etec1.png";
 function App() {
   const [images, setImages] = useState(null);
   const [ativo, setAtivo] = useState(false);
@@ -24,10 +27,10 @@ function App() {
     setAtivo(true);
     setImages([
       {
-        itemImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1160315031838265475/3152072_orig.png',
-        thumbnailImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1160315031838265475/3152072_orig.png',
-        alt: 'Description for Image 1',
-        title: 'Title 1'
+        itemImageSrc: etec1,
+        thumbnailImageSrc: etec1,
+        alt: 'Foto 1',
+        title: 'Etec Jaraguá'
       },
       {
         itemImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163600213458559097/WhatsApp_Image_2023-10-16_at_19.10.11.jpeg?',
@@ -46,12 +49,6 @@ function App() {
         thumbnailImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163637318146596874/WhatsApp_Image_2023-10-16_at_21.36.16.jpeg',
         alt: 'Description for Image 4',
         title: 'Title 4'
-      },
-      {
-        itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria5.jpg',
-        thumbnailImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria5s.jpg',
-        alt: 'Description for Image 5',
-        title: 'Title 5'
       },
     ])
   }, []);
@@ -73,13 +70,13 @@ function App() {
   };
 
   const header1 = () => {
-    return <img className='img-projeto' src="https://media.discordapp.net/attachments/1122234389867286640/1162852497971495072/image.png" />
+    return <img className='img-projeto' src={michel} />
   }
   const header2 = () => {
-    return <img className='img-projeto' src="https://media.discordapp.net/attachments/1122234389867286640/1162876573964325016/image.png" />
+    return <img className='img-projeto' src={daniel} />
   }
   const header3 = () => {
-    return <img className='img-projeto' src="https://media.discordapp.net/attachments/1122234389867286640/1162849713826037884/image.png" />
+    return <img className='img-projeto' src={natan} />
   }
   const footer = (link, github) => {
     return (
