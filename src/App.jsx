@@ -19,6 +19,9 @@ import michel from "./assets/michel.png";
 import natan from "./assets/natan.png";
 import daniel from "./assets/daniel.png";
 import etec1 from "./assets/etec1.png";
+import foto2 from "./assets/foto2.jpeg";
+import foto3 from "./assets/foto3.jpeg";
+import foto4 from "./assets/foto4.jpeg";
 function App() {
   const [images, setImages] = useState(null);
   const [ativo, setAtivo] = useState(false);
@@ -33,22 +36,22 @@ function App() {
         title: 'Etec Jaraguá'
       },
       {
-        itemImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163600213458559097/WhatsApp_Image_2023-10-16_at_19.10.11.jpeg?',
-        thumbnailImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163600213458559097/WhatsApp_Image_2023-10-16_at_19.10.11.jpeg?e',
-        alt: 'Description for Image 2',
-        title: 'Title 2'
+        itemImageSrc: foto2,
+        thumbnailImageSrc: foto2,
+        alt: 'Foto 2',
+        title: 'Etec Jaraguá'
       },
       {
-        itemImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163600213844443217/WhatsApp_Image_2023-10-16_at_19.10.09.jpeg',
-        thumbnailImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163600213844443217/WhatsApp_Image_2023-10-16_at_19.10.09.jpeg',
-        alt: 'Description for Image 3',
-        title: 'Title 3'
+        itemImageSrc: foto3,
+        thumbnailImageSrc: foto3,
+        alt: 'Foto 3',
+        title: 'Etec Jaraguá'
       },
       {
-        itemImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163637318146596874/WhatsApp_Image_2023-10-16_at_21.36.16.jpeg',
-        thumbnailImageSrc: 'https://media.discordapp.net/attachments/1122234389867286640/1163637318146596874/WhatsApp_Image_2023-10-16_at_21.36.16.jpeg',
-        alt: 'Description for Image 4',
-        title: 'Title 4'
+        itemImageSrc: foto4,
+        thumbnailImageSrc: foto4,
+        alt: 'Foto 4',
+        title: 'Etec Jaraguá'
       },
     ])
   }, []);
@@ -78,18 +81,17 @@ function App() {
   const header3 = () => {
     return <img className='img-projeto' src={natan} />
   }
-  const footer = (link, github) => {
+  const footer = (link, github, disable) => {
     return (
       <>
-
-          <div >
-            <a href={link}><Button label="Visitar" className='project-button' icon="pi pi-external-link" /></a>
-            <a href={github}><Button label="GitHub" className='project-button' severity="secondary" icon="pi pi-github" style={{ marginLeft: '0.5em' }} /></a>
-          </div>
-        
+        <div>
+          {disable ? null : (
+            <a href={disable ? "#" : link}><Button disabled={disable} label="Visitar" className='project-button' icon="pi pi-external-link" /></a>
+          )}
+          <a href={github}><Button label="GitHub" className='project-button' severity="secondary" icon="pi pi-github" style={{ marginLeft: '0.5em' }} /></a>
+        </div>
       </>
     )
-
   }
 
   return (
@@ -127,27 +129,26 @@ function App() {
               <AccordionsCurse />
             </div>
 
-
             <div className='title-projetos'>Confira nossos projetos</div>
 
             <div className='projects-cards'>
-              <Card title="Discord Bot" subTitle="Michel de Freitas" header={header1} footer={footer("https://gabrielly.website", "https://github.com/freitassdev")} className="md:w-20rem">
+              <Card title="Inteligência Artificial" subTitle="Michel de Freitas" header={header1} footer={footer("https://ds-jaragua.vercel.app", "https://github.com/freitassdev", true)} className="md:w-20rem">
                 <p className="m-0" >
-                Gabrielly foi um dos meus primeiros projetos, no caso um bot para o discord equipado com um dashboard. Foi fazendo esse projeto, que descobri meu amor pela programação.
-                <br /><br /><br />
+                  Quando participei do Hackathon 2023 do centro paula souza, fui encarregado de desenvolver uma inteligência artificial para o reconhecimento de objetos em tempo real.
+                  <br /><br /><br />
                 </p>
               </Card>
-              <Card title="Age Calculator" subTitle="Daniel Bueno" footer={footer("https://danielsrbueno.github.io/age-calculator/", "https://github.com/danielsrbueno")} header={header2} className="md:w-20rem">
+              <Card title="Age Calculator" subTitle="Daniel Bueno" footer={footer("https://danielsrbueno.github.io/age-calculator/", "https://github.com/danielsrbueno", false)} header={header2} className="md:w-20rem">
                 <p className="m-0" >
                   O Age Calculator calcula sua idade precisamente, em anos, meses e dias. Realizei o desafio com os conhecimentos que aprendi em Programação Web e Técnicas de Programação e Algoritmos.
                 </p>
                 <br />
               </Card>
-              <Card title="Portfolio" subTitle="Natan Santos" header={header3} footer={footer("https://primeiro-projeto-alura-natan.vercel.app", "https://github.com/NatanRib12")} className="md:w-20rem">
+              <Card title="Portfolio" subTitle="Natan Santos" header={header3} footer={footer("https://primeiro-projeto-alura-natan.vercel.app", "https://github.com/NatanRib12", false)} className="md:w-20rem">
                 <p className="m-0" >
                   No meu primeiro projeto, mergulhei no universo do desenvolvimento web, criando um site incrível do zero usando HTML e CSS. Explorei diversos caminhos, dando vida para minhas ideias com o objetivo de tornar o projeto mais atraente.
                 </p>
-                
+
               </Card>
             </div>
 
