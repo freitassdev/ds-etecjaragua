@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Box.css';
 import Fade from 'react-reveal/Fade';
+import foto1 from "../../assets/etec1.png";
 
 function Box({ title }) {
     return (
@@ -28,7 +29,7 @@ function Box({ title }) {
                         </div>
                         
                         
-                        <img alt="" />
+                        <img className='box-img' src={foto1}/>
                     </Fade>
                     <br />
                 </div>

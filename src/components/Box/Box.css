@@ -18,21 +18,29 @@
 .box-title {
   height: auto;
   text-align: center;
+  margin: 0 0 2% 0;
 }
 
 .box-body {
   text-align: justify;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .box-text {
   width: 50%;
-  margin: 1.2rem 0 0 0;
+  margin: 1rem 3% 3% 0;
   line-height: 1.5rem;
   text-indent: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.box-img{
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  margin: 0 0 2% 0;
 }

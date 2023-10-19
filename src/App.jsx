@@ -13,15 +13,11 @@ import AccordionsCurse from './components/Accordion/Accordion';
 import cartaz from './assets/cartaz.png';
 import { Galleria } from 'primereact/galleria';
 import Fade from 'react-reveal/Fade';
-import { Card } from 'primereact/card';
-import { Button } from 'primereact/button';
-import michel from "./assets/michel.png";
-import natan from "./assets/natan.png";
-import daniel from "./assets/daniel.png";
 import etec1 from "./assets/etec1.png";
 import foto2 from "./assets/foto2.jpeg";
 import foto3 from "./assets/foto3.jpeg";
 import foto4 from "./assets/foto4.jpeg";
+import ProjectCard from "./components/Card/Card"
 function App() {
   const [images, setImages] = useState(null);
   const [ativo, setAtivo] = useState(false);
@@ -72,28 +68,6 @@ function App() {
     return <img src={item.itemImageSrc} alt={item.alt} style={{ width: '100%', display: 'block', }} />;
   };
 
-  const header1 = () => {
-    return <img className='img-projeto' src={michel} />
-  }
-  const header2 = () => {
-    return <img className='img-projeto' src={daniel} />
-  }
-  const header3 = () => {
-    return <img className='img-projeto' src={natan} />
-  }
-  const footer = (link, github, disable) => {
-    return (
-      <>
-        <div>
-          {disable ? null : (
-            <a href={disable ? "#" : link}><Button disabled={disable} label="Visitar" className='project-button' icon="pi pi-external-link" /></a>
-          )}
-          <a href={github}><Button label="GitHub" className='project-button' severity="secondary" icon="pi pi-github" style={{ marginLeft: '0.5em' }} /></a>
-        </div>
-      </>
-    )
-  }
-
   return (
     <>
       <div className={`entrada content content-blur scroll-container ${ativo ? "ativo" : ""}`}>
@@ -132,26 +106,12 @@ function App() {
             <div className='title-projetos'>Confira nossos projetos</div>
 
             <div className='projects-cards'>
-              <Card title="Inteligência Artificial" subTitle="Michel de Freitas" header={header1} footer={footer("https://ds-jaragua.vercel.app", "https://github.com/freitassdev", true)} className="md:w-20rem">
-                <p className="m-0" >
-                  Quando participei do Hackathon 2023 do centro paula souza, fui encarregado de desenvolver uma inteligência artificial para o reconhecimento de objetos em tempo real.
-                  <br /><br /><br />
-                </p>
-              </Card>
-              <Card title="Age Calculator" subTitle="Daniel Bueno" footer={footer("https://danielsrbueno.github.io/age-calculator/", "https://github.com/danielsrbueno", false)} header={header2} className="md:w-20rem">
-                <p className="m-0" >
-                  O Age Calculator calcula sua idade precisamente, em anos, meses e dias. Realizei o desafio com os conhecimentos que aprendi em Programação Web e Técnicas de Programação e Algoritmos.
-                </p>
-                <br />
-              </Card>
-              <Card title="Portfolio" subTitle="Natan Santos" header={header3} footer={footer("https://primeiro-projeto-alura-natan.vercel.app", "https://github.com/NatanRib12", false)} className="md:w-20rem">
-                <p className="m-0" >
-                  No meu primeiro projeto, mergulhei no universo do desenvolvimento web, criando um site incrível do zero usando HTML e CSS. Explorei diversos caminhos, dando vida para minhas ideias com o objetivo de tornar o projeto mais atraente.
-                </p>
+              <ProjectCard title="Inteligência Artificial" subtitle="Michel de Freitas" description="Quando participei do Hackathon 2023 do centro paula souza, fui encarregado de desenvolver uma inteligência artificial para o reconhecimento de objetos em tempo real." image="michel" disabled={true} github="https://github.com/freitassdev" />
 
-              </Card>
+              <ProjectCard title="Age Calculator" subtitle="Daniel Bueno" description="O Age Calculator calcula sua idade precisamente, em anos, meses e dias. Realizei o desafio com os conhecimentos que aprendi em Programação Web e Técnicas de Programação e Algoritmos." image="daniel" link="https://danielsrbueno.github.io/age-calculator" github="https://github.com/danielsrbueno" />
+
+              <ProjectCard title="Portfólio" subtitle="Natan Santos" description="No meu primeiro projeto, mergulhei no universo do desenvolvimento web, criando um site incrível do zero usando HTML e CSS. Explorei diversos caminhos, dando vida para minhas ideias com o objetivo de tornar o projeto mais atraente." image="natan" link="https://primeiro-projeto-alura-natan.vercel.app" github="https://github.com/NatanRib12" />
             </div>
-
           </div>
         </section>
         {/* SECTION ETEC: Natan */}
