@@ -1,17 +1,21 @@
 import { useState } from 'react'
 import './Box.css';
-import foto1 from "../../assets/etec1.png";
+import Fade from 'react-reveal/Fade';
+import f from "../../assets/etec1.png";
 
 function Box({ title }) {
     return (
         <div className="box shadow-5">
             <div className="box-container">
+                <Fade up>
                     <div className="box-title">
                         <h1 className='title'>{title}</h1>
                     </div>
+                </Fade>
                 <div className="box-body">
                     {/*seu html do sobre mim aqui */}
 
+                    <Fade up>
                         <div className="box-text">
                             <p>
                                 Somos apaixonados por tecnologia e movidos pela inovação. Nossa equipe, formada por dedicados alunos e alunas da Etec Jaraguá, mergulhou de cabeça no mundo do desenvolvimento de sistemas.
@@ -26,6 +30,7 @@ function Box({ title }) {
                         
                         
                         <img className='box-img' src={foto1}/>
+                    </Fade>
                     <br />
                 </div>
             </div>

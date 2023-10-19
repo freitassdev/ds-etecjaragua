@@ -12,6 +12,7 @@ import './App.css';
 import AccordionsCurse from './components/Accordion/Accordion';
 import cartaz from './assets/cartaz.png';
 import { Galleria } from 'primereact/galleria';
+import Fade from 'react-reveal/Fade';
 import etec1 from "./assets/etec1.png";
 import foto2 from "./assets/foto2.jpeg";
 import foto3 from "./assets/foto3.jpeg";
@@ -74,10 +75,12 @@ function App() {
         {/* SECTION HOME: Michel */}
         <section id="home">
           <div className='background'>
+            <Fade up>
               <div className='home-container'>
                 <h1 className='home-title'>Se descubra no mundo da programação!</h1>
                 <p className='home-description'>Sua porta de entrada para o emocionante mundo do desenvolvimento de sistemas. Nosso objetivo não é apenas apresentar um pouco sobre o nosso curso, nós cultivamos mentes criativas, inspiramos inovação e capacitamos futuros desenvolvedores a transformarem suas paixões em soluções digitais. Explore o mundo da tecnologia com a nossa comunidade de programadores. Juntos, na Etec Jaraguá.</p>
               </div>
+            </Fade>
           </div>
         </section>
         <section id="divisor" className="divisor">
@@ -113,18 +116,24 @@ function App() {
         </section>
         {/* SECTION ETEC: Natan */}
         <section id="etec">
+          <Fade left>
             <div className='title-etec'>
               <h1>Etec Jaraguá</h1>
             </div>
+          </Fade>
+          <Fade right>
             <div className='txt-etec'>
               <p>
                 A sigla ETEC significa Escola Técnica Estadual, e é um tipo de instituição de ensino pública localizada em SP. Nela há cursos técnicos e cursos técnicos integrado ao ensino médio.
                 A ETEC é uma escola especializada em ensinar conhecimentos práticos e habilidades específicas em várias áreas como na informática. Os cursos duram alguns anos, e os estudantes aprendem na sala de aula, em laboratórios, estágios e visitas técnicas.
               </p>
             </div>
+          </Fade>
+          <Fade up>
             <div className="galleria-container">
               <Galleria value={images} style={{ maxWidth: '500px' }} showThumbnails={false} showIndicators item={itemTemplate} autoPlay />
             </div>
+          </Fade>
 
         </section>
         {/* SECTION ABOUT: Daniel */}
