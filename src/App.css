@@ -276,7 +276,7 @@ li.p-disabled {
 
 /*SECTION: ETEC*/
 #etec {
-  background-image: url(assets/stars.svg);
+  /* background-image: url(assets/stars.svg); */
 }
 
 .txt-etec {
@@ -457,7 +457,7 @@ li.p-disabled {
 }
 
 #curse {
-  background-image: url(assets/bubbles.svg);
+  /* background-image: url(assets/bubbles.svg); */
 }
 
 .curse-container {
