@@ -24,9 +24,9 @@ function Footer() {
                 <div className="footer three">
                     <h3>Informações de Contato</h3>
                     <ul>
-                        <a href="https://maps.app.goo.gl/BoB1Hxvh3XPXt2hY7" target='blank'>
-                        <li><span><i className='pi pi-map-marker'></i> R. Jairo de Almeida Machado, 401 - </span>Jaraguá, São Paulo - SP, 02998-060</li>
-                        </a>
+
+                        <li><a href="https://maps.app.goo.gl/BoB1Hxvh3XPXt2hY7" target='blank'><span><i className='pi pi-map-marker'></i> R. Jairo de Almeida Machado, 401 - </span>Jaraguá, São Paulo - SP, 02998-060</a></li>
+
                         <li><a href="tel:+55113941-7242"><i className='pi pi-phone'></i> (11) 3941-7242</a></li>
                         <li><a href="tel:+55113941-8319"><i className='pi pi-phone'></i> (11) 3941-8319</a></li>
                         <li><a href="mailto:e228acad@cps.sp.gov.br"><i className='pi pi-envelope'></i> e228acad@cps.sp.gov.br</a> </li>
@@ -39,10 +39,11 @@ function Footer() {
                     <p className="footer-gd">© 2023 Todos os Direitos Reservados | Feito por <a>Michel,</a> <a>Natan</a> e <a>Daniel</a> - 1º MDS</p>
                 </div>
                 <div className="copy-right">
-                    <ul><li><a href="#">Company Information</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms &amp; Conditions</a></li>
-                    </ul>
+                    <Scrollspy items={['home', 'curse', 'about']} currentClassName="active">
+                        <li><Link to="home" offset={-64} spy={true} smooth={true} duration={500}>Início</Link></li>
+                        <li><Link to="curse" offset={-64} spy={true} smooth={true} duration={500}>Nosso Curso</Link></li>
+                        <li><Link to="about" offset={-64} spy={true} smooth={true} duration={500}>Sobre Nós</Link></li>
+                    </Scrollspy>
                 </div>
                 <div className="clear"></div>
             </div>

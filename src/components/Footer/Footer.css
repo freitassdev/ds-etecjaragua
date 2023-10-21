@@ -292,7 +292,7 @@ p.adam {
 
 @media (max-width: 800px) {
     .footer-content {
-        width: 88%;
+        width: 100%;
     }
 
     .footer.one p {
@@ -320,7 +320,7 @@ p.adam {
 
 @media (max-width: 768px) {
     .footer-content {
-        width: 90%;
+        width: 100%;
     }
 
     p.footer-gd {
