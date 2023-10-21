@@ -1,0 +1,127 @@
+<div className="footer-button">
+                    <ul className='social-icons'>
+                        <li className='social-icon'>
+                            <a href='https://www.tiktok.com/@mds.etec' target='blank'><BiLogoTiktok size={32} color='fff' /></a>
+                        </li>
+                        <li className='social-icon'>
+                            <a href='https://www.instagram.com/ds.etecjaragua/' target='blank'><BiLogoInstagram size={32} color='fff' /></a>
+                        </li>
+                    </ul>
+                </div>
+                <Scrollspy items={['home', 'about', 'events', 'etec']} currentClassName="active" className='footer-items'>
+                    <li className='footer-item'>
+                        <Link to="home" offset={-64} spy={true} smooth={true} duration={500}>Início</Link>
+                    </li>
+                    <li className='footer-item'>
+                        <Link to="about" offset={-64} spy={true} smooth={true} duration={500}>Sobre Nós</Link>
+                    </li>
+                    <li className='footer-item'>
+                        <Link to="etec" offset={-64} spy={true} smooth={true} duration={500}>Etec Jaraguá</Link>
+                    </li>
+                    <li className='footer-item'>
+                        <Link to="events" offset={-64} spy={true} smooth={true} duration={500}>Vestibulinho</Link>
+                    </li>
+                </Scrollspy>
+                <div className='footer-infos'>
+                    <div className="footer-info">
+                        <a className="footer-info" href="https://maps.app.goo.gl/BoB1Hxvh3XPXt2hY7" target='blank'>
+                            <i className='pi pi-map-marker'></i>
+                            <p>R. Jairo de Almeida Machado, 401 - Jaraguá, São Paulo - SP, 02998-060</p>
+                        </a>
+                    </div>
+                    <div className="footer-phones">
+                        <div className="footer-info">
+                            <a className="footer-info" href="tel:+551139417242" target='blank'>
+                                <i className='pi pi-phone'></i>
+                                <p>(11) 3941-7242</p>
+                            </a>
+                        </div>
+                        <div className="footer-info">
+                            <a className="footer-info" href="tel:+551139418319" target='blank'>
+                                <i className='pi pi-phone'></i>
+                                <p>(11) 3941-8319</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="footer-info">
+                    <a className="footer-info" href="mailto:e228acad@cps.sp.gov.br" target='blank'>
+                        <i className='pi pi-envelope'></i>
+                        <p>e228acad@cps.sp.gov.br</p>
+                    </a>
+                </div>
+                </div>
+                
+                <div className='footer-copyright'>
+                    <p>&copy; 2023 | Desenvolvido por Natan, Daniel e Michel - 1ºMDS</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //////////////css
+
+            .footer {
+    width: 100%;
+    height: 14rem;
+    background: var(--surface-c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: -10px;
+}
+
+.footer-items {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-item {
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.footer-phones {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.footer-copyright {
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer a {
+    color: initial;
+    text-decoration: none;
+}

@@ -7,17 +7,16 @@ import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Box from './components/Box/Box';
-import { Steps } from 'primereact/steps';
 import './App.css';
-import AccordionsCurse from './components/Accordion/Accordion';
 import cartaz from './assets/cartaz.png';
-import { Galleria } from 'primereact/galleria';
 import Fade from 'react-reveal/Fade';
 import etec1 from "./assets/etec1.png";
 import foto2 from "./assets/foto2.jpeg";
 import foto3 from "./assets/foto3.jpeg";
 import foto4 from "./assets/foto4.jpeg";
 import ProjectCard from "./components/Card/Card"
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 function App() {
   const [images, setImages] = useState(null);
   const [ativo, setAtivo] = useState(false);
@@ -99,10 +98,9 @@ function App() {
                 Desenvolvimento de Sistemas
               </h1>
             </div>
-            <div className="accordions-container">
-              <AccordionsCurse />
+            <div className='description-DS'>
+              O estudante será capacitado para atuar em diversas áreas da tecnologia, desda parte visual de um software ou até mesmo algoritmos mais complexos para diversas finalidades. O curso de desenvolvimento de sistemas da Etec Jaraguá conta com diversas disciplinas técnicas como: Banco de dados, programação web, design digital, programação mobile etc. Nosso principal objetivo é desenvolver uma grande comunidade de programadores, acolhendo novas turmas de DS e incentivando a criatividade de nossos colegas.
             </div>
-
             <div className='title-projetos'>Confira nossos projetos</div>
 
             <div className='projects-cards'>
@@ -131,7 +129,21 @@ function App() {
           </Fade>
           <Fade up>
             <div className="galleria-container">
-              <Galleria value={images} style={{ maxWidth: '500px' }} showThumbnails={false} showIndicators item={itemTemplate} autoPlay />
+              <Carousel showArrows={true}>
+                <div>
+                  <img src={etec1} className="carousel-img-item" alt="Foto 1" />
+                </div>
+                <div>
+                  <img src={foto2} className="carousel-img-item" alt="Foto 2" />
+                </div>
+                <div>
+                  <img src={foto3} className="carousel-img-item" alt="Foto 3" />
+                </div>
+                <div>
+                  <img src={foto4} className="carousel-img-item" alt="Foto 4" />
+                </div>
+              </Carousel>
+              
             </div>
           </Fade>
 
@@ -156,18 +168,18 @@ function App() {
             </div>
             <div className="vestibulinho-rules">
               <ul className="rules-list">
-                <li className='rule-item'><i className='pi pi-id-card'></i> Necessário RG para realizar a prova</li>
-                <li className='rule-item'><i className="pi pi-arrow-right-arrow-left"></i> No momento da prova, não é permitido pedir algum emprestado a outro concorrente</li>
-                <li className='rule-item'><i className="pi pi-volume-up"></i> Caso o celular do participante emita algum som durante a prova, será desclassificado</li>
-                <li className='rule-item'><i className="pi pi-calculator"></i> Não é permitido o uso de calculadora</li>
-                <li className='rule-item'><i className="pi pi-clock"></i> Caso o concorrente chegue atrasado, será desclassificado</li>
+                <li className='rule-item'><span className="footer-icon"><i className='pi pi-id-card'></i></span> Necessário RG para realizar a prova</li>
+                <li className='rule-item'><span className="footer-icon"><i className='pi pi-arrow-right-arrow-left'></i></span> No momento da prova, não é permitido pedir algo emprestado a outro concorrente</li>
+                <li className='rule-item'><span className="footer-icon"><i className='pi pi-volume-up'></i></span> Caso o celular do participante emita algum som durante a prova, será desclassificado</li>
+                <li className='rule-item'><span className="footer-icon"><i className='pi pi-calculator'></i></span>  Não é permitido o uso de calculadora</li>
+                <li className='rule-item'><span className="footer-icon"><i className='pi pi-clock'></i></span> Caso o concorrente chegue atrasado, será desclassificado</li>
               </ul>
             </div>
           </div>
-          <div className="steps-vestibulinho">
-            <h1>Etapas</h1>
-            <Steps className="p-highlight" model={items} />
-          </div>
+          <br />
+          <br />
+          <br />
+          
         </section>
       </div>
       {/* FOOTER: Daniel */}

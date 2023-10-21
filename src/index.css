@@ -2,10 +2,57 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  padding: 0;
+  text-rendering: optimizeLegibility;
   line-height: 1.5;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.87);
   background-color: var(--surface-b);
+  --surface-a: #1f2d40;
+    --surface-b: #17212f;
+    --surface-c: rgba(255, 255, 255, 0.03);
+    --surface-d: #304562;
+    --surface-e: #1f2d40;
+    --surface-f: #1f2d40;
+    --text-color: rgba(255, 255, 255, 0.87);
+    --text-color-secondary: rgba(255, 255, 255, 0.6);
+    --primary-color: #64B5F6;
+    --primary-color-text: #212529;
+    --surface-0: #17212f;
+    --surface-50: #2e3744;
+    --surface-100: #454d59;
+    --surface-200: #5d646d;
+    --surface-300: #747a82;
+    --surface-400: #8b9097;
+    --surface-500: #a2a6ac;
+    --surface-600: #b9bcc1;
+    --surface-700: #d1d3d5;
+    --surface-800: #e8e9ea;
+    --surface-900: #ffffff;
+    --gray-50: #e8e9ea;
+    --gray-100: #d1d3d5;
+    --gray-200: #b9bcc1;
+    --gray-300: #a2a6ac;
+    --gray-400: #8b9097;
+    --gray-500: #747a82;
+    --gray-600: #5d646d;
+    --gray-700: #454d59;
+    --gray-800: #2e3744;
+    --gray-900: #17212f;
+    --content-padding: 1rem;
+    --inline-spacing: 0.5rem;
+    --border-radius: 3px;
+    --surface-ground: #17212f;
+    --surface-section: #17212f;
+    --surface-card: #1f2d40;
+    --surface-overlay: #1f2d40;
+    --surface-border: #304562;
+    --surface-hover: rgba(255,255,255,.03);
+    --focus-ring: 0 0 0 1px #93cbf9;
+    --maskbg: rgba(0, 0, 0, 0.4);
+    --highlight-bg: rgba(100, 181, 246, 0.16);
+    --highlight-text-color: rgba(255, 255, 255, 0.87);
+    color-scheme: light dark;
 }
 
 * {
@@ -55,4 +102,33 @@ body {
 
 .p-accordion {
   width: 100% !important;
+}
+
+.carousel-img-item {
+  max-width: 500px;
+}
+
+.carousel .thumb.selected, .carousel .thumb:hover {
+  border: 3px solid var(--primary-color) !important;
+}
+
+.carousel .thumb {
+  border: 3px solid #454d59 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.carousel-root {
+  max-width: 555px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-status {
+  display: none;
 }

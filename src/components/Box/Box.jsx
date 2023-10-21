@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import './Box.css';
 import Fade from 'react-reveal/Fade';
-import f from "../../assets/etec1.png";
-
+import foto1 from "../../assets/etec1.png";
+import image from "./base64.json"
 function Box({ title }) {
+    const base64_1mds = image.image;
     return (
         <div className="box shadow-5">
             <div className="box-container">
@@ -29,7 +30,7 @@ function Box({ title }) {
                         </div>
                         
                         
-                        <img className='box-img' src={foto1}/>
+                        <img className='box-img' src={base64_1mds} />
                     </Fade>
                     <br />
                 </div>

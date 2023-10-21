@@ -6,67 +6,45 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#1e2836" fillOpacity="1" d="M0,288L60,282.7C120,277,240,267,360,266.7C480,267,600,277,720,282.7C840,288,960,288,1080,272C1200,256,1320,224,1380,208L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-            </svg>
-            <div className='footer'>
-                <div className="footer-button">
-                    <ul className='social-icons'>
-                        <li className='social-icon'>
-                            <a href='https://www.tiktok.com/@mds.etec' target='blank'><BiLogoTiktok size={32} color='fff' /></a>
-                        </li>
-                        <li className='social-icon'>
-                            <a href='https://www.instagram.com/ds.etecjaragua/' target='blank'><BiLogoInstagram size={32} color='fff' /></a>
-                        </li>
+        <div className="footer-content">
+            <div className="footer-grids">
+                <div className="footer one">
+                    <h3>Mais sobre o site</h3>
+                    <p>Este site foi criado com o intuito de divulgar e promover nosso curso desenvolvimento de sistemas) da Etec Jaraguá. Somos a quarta turma à ingressar após a criação do curso na nossa etec.</p>
+                    <div className="clear"></div>
+                </div>
+                <div className="footer two">
+                    <h3>Mantenha-se conectado</h3>
+                    <ul>
+                        <li><a className="footer-icon" href="https://www.instagram.com/ds.etecjaragua/" target='blank'><i className='pi pi-instagram'></i></a>Instagram</li>
+                        <li><a className="footer-icon" href="https://www.tiktok.com/@mds.etec" target='blank'><BiLogoTiktok size={20}></BiLogoTiktok></a>TikTok</li>
+                        <li><a className="footer-icon" href="https://www.etecjaragua.com" target='blank'><i className='pi pi-external-link'></i></a>Site Etec Jaraguá</li>
                     </ul>
                 </div>
-                <Scrollspy items={['home', 'about', 'events', 'etec']} currentClassName="active" className='footer-items'>
-                    <li className='footer-item'>
-                        <Link to="home" offset={-64} spy={true} smooth={true} duration={500}>Início</Link>
-                    </li>
-                    <li className='footer-item'>
-                        <Link to="about" offset={-64} spy={true} smooth={true} duration={500}>Sobre Nós</Link>
-                    </li>
-                    <li className='footer-item'>
-                        <Link to="etec" offset={-64} spy={true} smooth={true} duration={500}>Etec Jaraguá</Link>
-                    </li>
-                    <li className='footer-item'>
-                        <Link to="events" offset={-64} spy={true} smooth={true} duration={500}>Vestibulinho</Link>
-                    </li>
-                </Scrollspy>
-                <div className='footer-infos'>
-                    <div className="footer-info">
-                        <a className="footer-info" href="https://maps.app.goo.gl/BoB1Hxvh3XPXt2hY7" target='blank'>
-                            <i className='pi pi-map-marker'></i>
-                            <p>R. Jairo de Almeida Machado, 401 - Jaraguá, São Paulo - SP, 02998-060</p>
+                <div className="footer three">
+                    <h3>Informações de Contato</h3>
+                    <ul>
+                        <a href="https://maps.app.goo.gl/BoB1Hxvh3XPXt2hY7" target='blank'>
+                        <li><span><i className='pi pi-map-marker'></i> R. Jairo de Almeida Machado, 401 - </span>Jaraguá, São Paulo - SP, 02998-060</li>
                         </a>
-                    </div>
-                    <div className="footer-phones">
-                        <div className="footer-info">
-                            <a className="footer-info" href="tel:+551139417242" target='blank'>
-                                <i className='pi pi-phone'></i>
-                                <p>(11) 3941-7242</p>
-                            </a>
-                        </div>
-                        <div className="footer-info">
-                            <a className="footer-info" href="tel:+551139418319" target='blank'>
-                                <i className='pi pi-phone'></i>
-                                <p>(11) 3941-8319</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="footer-info">
-                    <a className="footer-info" href="mailto:e228acad@cps.sp.gov.br" target='blank'>
-                        <i className='pi pi-envelope'></i>
-                        <p>e228acad@cps.sp.gov.br</p>
-                    </a>
+                        <li><a href="tel:+55113941-7242"><i className='pi pi-phone'></i> (11) 3941-7242</a></li>
+                        <li><a href="tel:+55113941-8319"><i className='pi pi-phone'></i> (11) 3941-8319</a></li>
+                        <li><a href="mailto:e228acad@cps.sp.gov.br"><i className='pi pi-envelope'></i> e228acad@cps.sp.gov.br</a> </li>
+                    </ul>
                 </div>
+                <div className="clear"></div>
+            </div>
+            <div className="copy-right-grids">
+                <div className="copy-left">
+                    <p className="footer-gd">© 2023 Todos os Direitos Reservados | Feito por <a>Michel,</a> <a>Natan</a> e <a>Daniel</a> - 1º MDS</p>
                 </div>
-                
-                <div className='footer-copyright'>
-                    <p>&copy; 2023 | Desenvolvido por Natan, Daniel e Michel - 1ºMDS</p>
+                <div className="copy-right">
+                    <ul><li><a href="#">Company Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
                 </div>
+                <div className="clear"></div>
             </div>
         </div>
 

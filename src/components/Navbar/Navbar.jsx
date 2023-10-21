@@ -3,9 +3,10 @@ import './Navbar.css';
 import Scrollspy from 'react-scrollspy';
 import { Link } from 'react-scroll';
 import logo from '../../assets/logo.svg';
-import { Button } from 'primereact/button'
-import { BiLogoTiktok, BiLogoInstagram } from 'react-icons/bi';
+import Button from '../../components/Button/Button'
+import { BiLogoTiktok, BiLogoInstagram, BiLinkExternal } from 'react-icons/bi';
 import { HiBars3BottomRight } from 'react-icons/hi2';
+
 function Navbar() {
     const [mobile, setMobile] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
@@ -76,7 +77,7 @@ function Navbar() {
                         </li>
                     </ul>
 
-                    <a href='https://www.etecjaragua.com' target='blank'><Button className="navbar-external-button" label="&nbsp; Etec Jaraguá" icon="pi pi-external-link" style={{ whiteSpace: "nowrap" }} /></a>
+                    <a href='https://www.etecjaragua.com' target='blank'><Button className="navbar-external-button" label="&nbsp; Etec Jaraguá" ><BiLinkExternal size={23} color='ffffff' /></Button></a>
                     <button className='button-toggle' onClick={() => {
                         setMobile(!mobile)
                     }}><HiBars3BottomRight color="64b5f6" size={35} /></button>
