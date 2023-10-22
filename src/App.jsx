@@ -100,8 +100,7 @@ function App() {
                 Desenvolvimento de Sistemas
               </h1>
             </div>
-            <div className='description-DS'>
-              O estudante será capacitado para atuar em diversas áreas da tecnologia, desde a parte visual de um software até mesmo algoritmos mais complexos para diversas finalidades. O curso de Desenvolvimento de Sistemas da Etec Jaraguá conta com diversas disciplinas técnicas, tais como: Banco de dados, programação web, design digital, programação mobile, entre outras. Nosso principal objetivo é desenvolver uma grande comunidade de programadores, acolhendo novas turmas de DS e incentivando a criatividade de nossos colegas.
+            <div className='description-DS'>O curso de desenvolvimento de sistemas ensina a criar software, abrangendo programação, design de interfaces e algoritmos. É um curso que capacita os alunos a desenvolver aplicativos para computador e celular, websites e soluções digitais, combinando habilidades visuais e técnicas. Nosso principal objetivo é desenvolver uma grande comunidade de programadores, acolhendo novas turmas de DS e incentivando a criatividade de nossos colegas.
             </div>
             <div className='title-projetos'>Confira nossos projetos</div>
 
