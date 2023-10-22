@@ -10,7 +10,7 @@ function Footer() {
             <div className="footer-grids">
                 <div className="footer one">
                     <h3>Mais sobre o site</h3>
-                    <p>Este site foi criado com o intuito de divulgar e promover nosso curso desenvolvimento de sistemas) da Etec Jaraguá. Somos a quarta turma à ingressar após a criação do curso na nossa etec.</p>
+                    <p>Este site foi criado com o intuito de divulgar e promover nosso curso (Desenvolvimento de Sistemas) da Etec Jaraguá. Somos a quarta turma a ingressar após a criação do curso em nossa Etec.</p>
                     <div className="clear"></div>
                 </div>
                 <div className="footer two">

@@ -78,6 +78,8 @@ function App() {
               <div className='home-container'>
                 <h1 className='home-title'>Se descubra no mundo da programação!</h1>
                 <p className='home-description'>Sua porta de entrada para o emocionante mundo do desenvolvimento de sistemas. Nosso objetivo não é apenas apresentar um pouco sobre o nosso curso, nós cultivamos mentes criativas, inspiramos inovação e capacitamos futuros desenvolvedores a transformarem suas paixões em soluções digitais. Explore o mundo da tecnologia com a nossa comunidade de programadores. Juntos, na Etec Jaraguá.</p>
+                <p className='home-description-mobile'>
+                  Nosso objetivo não é apenas apresentar um pouco sobre o nosso curso, nós inspiramos inovação e capacitamos futuros desenvolvedores a transformarem suas carreiras. Explore o mundo da tecnologia conosco. Juntos, na Etec Jaraguá.</p>
               </div>
             </Fade>
           </div>
@@ -99,7 +101,7 @@ function App() {
               </h1>
             </div>
             <div className='description-DS'>
-              O estudante será capacitado para atuar em diversas áreas da tecnologia, desda parte visual de um software ou até mesmo algoritmos mais complexos para diversas finalidades. O curso de desenvolvimento de sistemas da Etec Jaraguá conta com diversas disciplinas técnicas como: Banco de dados, programação web, design digital, programação mobile etc. Nosso principal objetivo é desenvolver uma grande comunidade de programadores, acolhendo novas turmas de DS e incentivando a criatividade de nossos colegas.
+              O estudante será capacitado para atuar em diversas áreas da tecnologia, desde a parte visual de um software até mesmo algoritmos mais complexos para diversas finalidades. O curso de Desenvolvimento de Sistemas da Etec Jaraguá conta com diversas disciplinas técnicas, tais como: Banco de dados, programação web, design digital, programação mobile, entre outras. Nosso principal objetivo é desenvolver uma grande comunidade de programadores, acolhendo novas turmas de DS e incentivando a criatividade de nossos colegas.
             </div>
             <div className='title-projetos'>Confira nossos projetos</div>
 
@@ -122,8 +124,8 @@ function App() {
           <Fade right>
             <div className='txt-etec'>
               <p>
-                A sigla ETEC significa Escola Técnica Estadual, e é um tipo de instituição de ensino pública localizada em SP. Nela há cursos técnicos e cursos técnicos integrado ao ensino médio.
-                A ETEC é uma escola especializada em ensinar conhecimentos práticos e habilidades específicas em várias áreas como na informática. Os cursos duram alguns anos, e os estudantes aprendem na sala de aula, em laboratórios, estágios e visitas técnicas.
+                A sigla ETEC significa Escola Técnica Estadual e trata-se de uma instituição de ensino pública localizada no estado São Paulo. Na ETEC, são oferecidos cursos técnicos, bem como cursos técnicos integrados ao ensino médio.
+                A instituição é especializada em ensinar conhecimentos práticos e habilidades específicas em diversas áreas, como informática. Os cursos têm duração  de alguns anos, e os estudantes aprendem tanto em sala de aula quanto em laboratórios, durante estágios e visitas técnicas.
               </p>
             </div>
           </Fade>
@@ -143,7 +145,7 @@ function App() {
                   <img src={foto4} className="carousel-img-item" alt="Foto 4" />
                 </div>
               </Carousel>
-              
+
             </div>
           </Fade>
 
@@ -179,7 +181,7 @@ function App() {
           <br />
           <br />
           <br />
-          
+
         </section>
       </div>
       {/* FOOTER: Daniel */}

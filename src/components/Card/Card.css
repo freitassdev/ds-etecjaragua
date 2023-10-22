@@ -11,7 +11,7 @@
     background-color: var(--surface-a);
 }
 .card .card-body {
-    height: calc(100% - 230px);
+    height: calc(100% - 200px);
     position: relative;
     display: flex;
     flex-direction: column;

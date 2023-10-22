@@ -193,21 +193,6 @@ p.adam {
     border: none;
 }
 
-.footer.two ul li a.fb1:hover {
-    background: url('../images/social2hover.png') no-repeat 0px 4px;
-    color: var(--primary-color);
-}
-
-.footer.two ul li a.fb2:hover {
-    background: url('../images/social4hover.png') no-repeat 0px 4px;
-    color: var(--primary-color);
-}
-
-.footer.two ul li a.fb3:hover {
-    background: url('../images/social5hover.png') no-repeat 0px 4px;
-    
-}
-
 .footer.two ul li a:hover,
 .copy-right ul li a:hover,
 .footer.three ul li a:hover {
@@ -259,7 +244,7 @@ p.adam {
     }
 
     .footer.two ul li {
-        padding: 10px 0 10px 38px;
+        padding: 10px 0 10px 0;
     }
 
     .footer h3 {
@@ -305,12 +290,6 @@ p.adam {
 
     .footer.three ul li {
         font-size: 13px;
-    }
-
-    .footer.three ul li:nth-child(1),
-    .footer.three ul li:nth-child(2),
-    .footer.three ul li a {
-        padding-left: 32px;
     }
 
     .footer h3 {

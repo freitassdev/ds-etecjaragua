@@ -77,7 +77,7 @@ function Navbar() {
                         </li>
                     </ul>
 
-                    <a href='https://www.etecjaragua.com' target='blank'><Button className="navbar-external-button" label="&nbsp; Etec Jaraguá" ><BiLinkExternal size={23} color='ffffff' /></Button></a>
+                    <a href='https://www.etecjaragua.com' className="navbar-external-button" target='blank'><Button className="navbar-external-button" label="&nbsp; Etec Jaraguá" ><BiLinkExternal size={23} color='ffffff' /></Button></a>
                     <button className='button-toggle' onClick={() => {
                         setMobile(!mobile)
                     }}><HiBars3BottomRight color="64b5f6" size={35} /></button>

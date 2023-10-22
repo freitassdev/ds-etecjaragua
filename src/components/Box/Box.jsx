@@ -29,8 +29,9 @@ function Box({ title }) {
                             </p>
                         </div>
                         
-                        
-                        <img className='box-img' src={base64_1mds} />
+                        <div className="box-img-container">
+                            <img className='box-img' src={base64_1mds} />
+                        </div>
                     </Fade>
                     <br />
                 </div>
